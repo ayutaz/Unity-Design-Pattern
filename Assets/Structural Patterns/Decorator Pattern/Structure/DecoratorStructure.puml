@@ -1,0 +1,16 @@
+﻿@startuml
+'https://plantuml.com/class-diagram
+
+abstract class Component
+abstract class Decorator
+
+class ConcreteComponent
+class ConcreteDecoratorA
+class ConcreteDecoratorB
+
+ConcreteComponent -|> Component
+Decorator -|> Component
+ConcreteDecoratorA -|> Decorator
+ConcreteDecoratorB -|> Decorator
+
+@enduml

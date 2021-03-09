@@ -1,0 +1,17 @@
+﻿@startuml
+'https://plantuml.com/class-diagram
+
+interface IPizza
+
+class PlainPizza
+class Mozzarella
+class TomatoSauce
+
+abstract class ToppingDecorator
+
+Mozzarella -|> ToppingDecorator
+PlainPizza ..|> IPizza
+ToppingDecorator ..|> IPizza
+TomatoSauce -|> ToppingDecorator
+
+@enduml

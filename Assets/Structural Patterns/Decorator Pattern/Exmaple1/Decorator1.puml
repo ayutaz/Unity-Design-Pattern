@@ -1,0 +1,19 @@
+﻿@startuml
+'https://plantuml.com/class-diagram
+
+abstract class LibraryItem
+
+class Book
+class Video
+abstract class Decorator
+
+class Borrowable
+
+Book -|> LibraryItem
+Video -|> LibraryItem
+
+Decorator -|> LibraryItem
+
+Borrowable -|> Decorator
+
+@enduml
