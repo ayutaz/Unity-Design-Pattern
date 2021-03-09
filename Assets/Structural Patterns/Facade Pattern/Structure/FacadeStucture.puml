@@ -1,0 +1,15 @@
+﻿@startuml
+'https://plantuml.com/sequence-diagram
+
+class SubSystemOne
+class SubSystemTwo
+class SubSystemThree
+class SubSystemFour
+class Facade
+
+SubSystemOne ..> Facade
+SubSystemTwo ..> Facade
+SubSystemThree ..> Facade
+SubSystemFour ..> Facade
+
+@enduml

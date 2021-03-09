@@ -1,0 +1,19 @@
+﻿@startuml
+'https://plantuml.com/sequence-diagram
+
+class BankAccountFacade
+
+class AccountNumberCheck
+
+class SecurityCodeCheck
+
+class FundsCheck
+
+class WelcomeToBank
+
+AccountNumberCheck ..> BankAccountFacade
+SecurityCodeCheck ..> BankAccountFacade
+FundsCheck ..>BankAccountFacade
+WelcomeToBank ..>BankAccountFacade
+
+@enduml

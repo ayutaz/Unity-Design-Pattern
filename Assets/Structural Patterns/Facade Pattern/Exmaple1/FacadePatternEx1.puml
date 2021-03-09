@@ -1,0 +1,15 @@
+﻿@startuml
+'https://plantuml.com/sequence-diagram
+
+class Bank
+
+class Credit
+
+class Loan
+
+class Mortgage
+
+Bank ..> Mortgage
+Loan ..> Mortgage
+Credit ..> Mortgage
+@enduml
