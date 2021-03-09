@@ -1,0 +1,17 @@
+﻿@startuml
+'https://plantuml.com/class-diagram
+
+interface IEnemyAttacker
+class EnemyTank
+class EnemyRobot
+class EnemyRobotAdaper
+
+EnemyTank ..|> IEnemyAttacker
+EnemyRobotAdaper ..|> IEnemyAttacker
+EnemyRobotAdaper ..> EnemyRobot
+
+'提供されているもの:
+'変換装置:
+'必要なもの:
+
+@enduml

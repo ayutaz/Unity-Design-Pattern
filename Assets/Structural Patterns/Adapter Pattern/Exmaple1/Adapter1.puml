@@ -1,0 +1,15 @@
+﻿@startuml
+'https://plantuml.com/class-diagram
+
+class Compound
+class RichCompound
+class ChemicalDatabank
+
+RichCompound -|> Compound
+
+RichCompound ..> ChemicalDatabank
+
+'提供されているもの:ChemicalDatabank
+'変換装置:RichCompound
+'必要なもの:ChemicalDatabank
+@enduml
